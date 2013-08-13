@@ -4,4 +4,13 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def live
+  end
+
+  def confirm
+  end
+
+  def register
+  end
 end

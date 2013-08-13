@@ -4,13 +4,17 @@ $btnPrimaryBackground: purple;
 
 @import 'bootstrap';
 body{
-    padding-top: 60px;
+    padding-top: 0px;
 }
 
 @import 'bootstrap-responsive';
 
 @font-face {
 	font-family: Arial;	
+}
+
+.navbar .container {
+	width: 1170px;
 }
 
 .navbar-inner{
@@ -36,7 +40,6 @@ body{
 .jumbotron {
 	text-align: center;
 	padding: 10px 10px 20px 10px;
-	margin-top: 30px;
 	display: block;
 	border-width: 1px;
 	border-style: solid;
@@ -53,6 +56,10 @@ body{
 	background-image: linear-gradient(to bottom, white, rgb(236, 242, 245));
 	background-repeat: repeat-x;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.marketing {
+	text-align: center;
 }
 
 .btn {
