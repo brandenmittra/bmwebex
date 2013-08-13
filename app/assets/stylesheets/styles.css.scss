@@ -35,9 +35,8 @@ body{
 
 .jumbotron {
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 50px;
+	padding: 10px 10px 20px 10px;
+	margin-top: 30px;
 	display: block;
 	border-width: 1px;
 	border-style: solid;
@@ -51,14 +50,34 @@ body{
 	min-width: 220px;
 	border-radius: 5px 5px 5px 5px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+	background-image: linear-gradient(to bottom, white, rgb(236, 242, 245));
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
 .btn {
-	margin-left: -3px;
-	margin-right:3px;
 	padding-left: 80px;
 	padding-right: 83px;
 }
+
+.btn-primary {
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: #FF7200;
+	background-image: none;
+	background-repeat: none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover {
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+	background-color: #FF7200;
+	background-image: none;
+	background-repeat: none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
 
 ul, ol {
     padding: 11px;
@@ -68,4 +87,53 @@ ul, ol {
 a {
 	color: #FF7200;
 	font-weight: 500;
+}
+
+#mc_embed_signup .mc-field-group.input-group input {
+    display: inline;
+    width: auto;
+    border: medium none;
+    margin-top: -4px;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+    display: inline;
+    margin-left: 15px;
+}
+
+#mc_embed_signup .button {
+    clear: both;
+    background-color: #FF7200;
+    border: 0px none;
+    border-radius: 4px 4px 4px 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 5px 10px 0px;
+    padding: 0px 22px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+
+#mc_embed_signup input {
+    border: 1px solid rgb(200, 200, 200);
+}
+
+#mc_embed_signup .asterisk {
+    color: rgb(204, 102, 0);
+    font-size: 200%;
+    margin-top: 15px;
+}
+
+#mc_embed_signup {
+    background: none repeat scroll 0% 0%;
+    clear: left;
+    font: 14px Arial,sans-serif;
 }
