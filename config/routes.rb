@@ -5,8 +5,9 @@ Aurmicrosite::Application.routes.draw do
 
   devise_for :users
 
-  root :to => 'pages#home'
+  root :to => 'pages#holding'
   
+  get 'home' => 'pages#home'
   get 'about' => 'pages#about'
   get 'welcome' => 'pages#welcome'
   get 'webcast' => 'pages#webcast'

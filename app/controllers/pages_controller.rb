@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def holding
+  end
+
   def about
   end
 
