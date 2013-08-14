@@ -1,8 +1,8 @@
 class ContactController < ApplicationController
 
 	def new
-    @message = Message.new
-  end
+		@message = Message.new
+	end
 
   def create
     @message = Message.new(params[:message])
@@ -15,5 +15,5 @@ class ContactController < ApplicationController
       render :new
     end
   end
-  
+
 end

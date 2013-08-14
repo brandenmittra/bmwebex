@@ -1,5 +1,25 @@
-<div class="marketing">
+<div class="jumbotron">
 	<img src="http://placehold.it/750x400">
-</div>
 
+	<hr>
+
+	<%= simple_form_for :message, :url => contact_path do |form| %>
+	  <fieldset class="fields">
+	    <div class="field">
+	      <%= form.text_field :name, placeholder: 'Name' %>
+	    </div>
+
+	    <div class="field">
+	      <%= form.text_field :country, placeholder: 'Country' %>
+	    </div>
+	    
+	    <div class="field">
+	      <%= form.text_area :body, placeholder: 'Message', input_html: { rows: "3" } %>
+	    </div>
+	  </fieldset>
+	  
+	  <fieldset class="actions">
+	    <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
+	  </fieldset>
+	</div>
 <% end %>
