@@ -1,21 +1,22 @@
-<div class="marketing">
-  <%= simple_form_for :message, :url => contact_path do |form| %>
-      <fieldset class="fields">
-        <div class="field">
-          <%= form.text_field :name, placeholder: 'Name' %>
-        </div>
-
-        <div class="field">
-          <%= form.text_field :country, placeholder: 'Country' %>
-        </div>
-        
-        <div class="field">
-          <%= form.text_area :body, placeholder: 'Message', input_html: { rows: "3" } %>
-        </div>
-      </fieldset>
-      
-      <fieldset class="actions">
-        <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
-      </fieldset>
+<%= form_for @message, :url => contact_path do |form| %>
+  <fieldset class="fields">
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
     </div>
+
+    <div class="field">
+      <%= form.label :country %>
+      <%= form.text_field :country %>
+    </div>
+    
+    <div class="field">
+      <%= form.label :body %>
+      <%= form.text_area :body %>
+    </div>
+  </fieldset>
+  
+  <fieldset class="actions">
+    <%= form.submit "Send" %>
+  </fieldset>
 <% end %>
