@@ -1,5 +1,8 @@
 Aurmicrosite::Application.routes.draw do
 
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+
   devise_for :users
 
   root :to => 'pages#home'
@@ -7,6 +10,8 @@ Aurmicrosite::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'welcome' => 'pages#welcome'
   get 'webcast' => 'pages#webcast'
+
+  get 'live' => 'pages#live'
 
 
   # The priority is based upon order of creation:

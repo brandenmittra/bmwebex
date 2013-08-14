@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'country_select'
+gem 'mail_form'
 
 group :production do
 	gem 'pg'
