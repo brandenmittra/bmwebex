@@ -24,9 +24,13 @@ body{
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    background-color: transparent;
-    color: #FF7200;
+    background-color: none;
+    color: rgb(255, 110, 0);
     text-decoration: none;
+}
+
+.brand:hover {
+	background-color: transparent;
 }
 
 .footer {
@@ -60,6 +64,7 @@ body{
 
 .marketing {
 	text-align: center;
+	margin-left: -5px;
 }
 
 .btn {
@@ -70,7 +75,7 @@ body{
 .btn-primary {
 	color: white;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-	background-color: #FF7200;
+	background-color: rgb(255, 110, 0);
 	background-image: none;
 	background-repeat: none;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -79,7 +84,7 @@ body{
 .btn-primary:hover {
 	color: white;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-	background-color: #FF7200;
+	background-color: rgb(255, 110, 0);
 	background-image: none;
 	background-repeat: none;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -92,8 +97,12 @@ ul, ol {
 }
 
 a {
-	color: #FF7200;
+	color: rgb(255, 110, 0);
 	font-weight: 500;
+}
+
+a:hover {
+	background-color: transparent;
 }
 
 #mc_embed_signup .mc-field-group.input-group input {
@@ -110,7 +119,7 @@ a {
 
 #mc_embed_signup .button {
     clear: both;
-    background-color: #FF7200;
+    background-color: rgb(255, 110, 0);
     border: 0px none;
     border-radius: 4px 4px 4px 4px;
     color: rgb(255, 255, 255);
@@ -143,4 +152,10 @@ a {
     background: none repeat scroll 0% 0%;
     clear: left;
     font: 14px Arial,sans-serif;
+}
+
+.table-striped {
+	width: auto;
+	margin-left: 100px;
+	margin-right: 110px;
 }

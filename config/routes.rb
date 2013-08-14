@@ -5,7 +5,7 @@ Aurmicrosite::Application.routes.draw do
   root :to => 'pages#home'
   
   get 'about' => 'pages#about'
-  get 'register' => 'pages#register'
+  get 'welcome' => 'pages#welcome'
   get 'webcast' => 'pages#webcast'
 
 
