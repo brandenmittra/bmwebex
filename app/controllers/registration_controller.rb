@@ -8,7 +8,7 @@ def new
     @registration = Registration.new(params[:registration])
     
     if @registration.valid?
-      NotificationsMailer.new_registration(@registration).deliver
+      RegistrationsMailer.new_registration(@registration).deliver
       redirect_to(welcome_path, :notice => "You have successfully registered.")
 
     else

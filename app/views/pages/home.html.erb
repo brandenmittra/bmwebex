@@ -27,11 +27,36 @@
 
 <br>
 
-			
-			<div class="marketing span6">
-				<%= render 'layouts/register' %>
-			</div>
+<div class="marketing span6">
 
-			
-	</div>
+	<div id="flash_notice" style="display:none"></div>
+		<%= simple_form_for :registration, :url => registration_path do |form| %>
+		  <fieldset class="fields">
+		    <div class="field">
+		      <%= form.text_field :name, placeholder: 'Name' %>
+		    </div>
 
+		    <div class="field">
+		      <%= form.text_field :media, placeholder: 'Media Outlet' %>
+		    </div>
+
+		    <div class="field">
+		      <%= form.text_field :country, placeholder: 'Country' %>
+		    </div>
+		    
+		    <div class="field">
+		      <%= form.text_field :email, placeholder: 'E-mail' %>
+		    </div>
+		  </fieldset>
+		  	
+		  	<div class="field">
+				<p><input id="accept" name="accept" type="checkbox" value="1" />&nbsp Please tick here to confirm you are a journalist.</p>
+			</div>		  
+		  
+		  <fieldset class="actions">
+		    <%= form.submit "Register", class: 'btn btn-primary btn-large' %>
+		  </fieldset>
+		</div>
+	<% end %>
+
+</div>			

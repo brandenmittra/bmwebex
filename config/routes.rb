@@ -2,12 +2,14 @@ Aurmicrosite::Application.routes.draw do
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
+  match 'registration' => 'registration#new', :as => 'registration', :via => :get
+  match 'registration' => 'registration#create', :as => 'registration', :via => :post
 
   devise_for :users
 
-  root :to => 'pages#holding'
+  root :to => 'pages#home'
   
-  get 'home' => 'pages#home'
+  get 'holding' => 'pages#holding'
   get 'about' => 'pages#about'
   get 'welcome' => 'pages#welcome'
   get 'webcast' => 'pages#webcast'

@@ -7,7 +7,8 @@ body{
     padding-top: 0px;
     background-image: url('realise-background-alt.png');
     background-repeat: no-repeat;
-    background-position:center 300px;     
+    background-position:center 300px;
+    height: 100%;     
 }
 
 @import 'bootstrap-responsive';
@@ -88,6 +89,8 @@ body{
 
 .marketing {
 	text-align: center;
+	margin: 35px;
+	margin-bottom: 180px;
 }
 
 .btn {
@@ -197,5 +200,21 @@ a:hover {
 }
 
 #message_body {
+	width: 50%;
+}
+
+#registration_name {
+	width: 50%;
+}
+
+#registration_media {
+	width: 50%;
+}
+
+#registration_country {
+	width: 50%;
+}
+
+#registration_email {
 	width: 50%;
 }
