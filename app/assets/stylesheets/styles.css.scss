@@ -5,6 +5,9 @@ $btnPrimaryBackground: purple;
 @import 'bootstrap';
 body{
     padding-top: 0px;
+    background-image: url('realise-background-alt.png');
+    background-repeat: no-repeat;
+    background-position:center 300px;     
 }
 
 @import 'bootstrap-responsive';
@@ -13,14 +16,19 @@ body{
 	font-family: Arial;	
 }
 
+.container {
+	max-width: 1024px;
+}
+
 .navbar .container {
-	width: 1170px;
+	width: 1024px;
 }
 
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
     padding-top: 15px;
+    background: transparent;
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
@@ -37,7 +45,7 @@ body{
 
 	margin-top: 50px;
 	margin-bottom: 20px;
-	color: $grayLight;
+	color: #000;
 	text-align: center;
 }
 
@@ -71,6 +79,7 @@ body{
 	font-size: 13pt;
 	font-style: bold;
 	color: rgb(255, 110, 0);
+   	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 }
 
 .jumbotron p {
@@ -79,7 +88,6 @@ body{
 
 .marketing {
 	text-align: center;
-	margin-left: -5px;
 }
 
 .btn {
@@ -164,7 +172,7 @@ a:hover {
 }
 
 #mc_embed_signup {
-    background: none repeat scroll 0% 0%;
+    background-color: rgb(255, 255, 255);
     clear: left;
     font: 14px Arial,sans-serif;
 }
@@ -173,4 +181,21 @@ a:hover {
 	width: auto;
 	margin-left: 100px;
 	margin-right: 110px;
+}
+
+
+#message_name {
+	width: 50%;
+}
+
+#message_country {
+	width: 50%;
+}
+
+#message_doctor {
+	width: 50%;
+}
+
+#message_body {
+	width: 50%;
 }

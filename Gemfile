@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'country_select'
 gem 'mail_form'
+gem 'newrelic_rpm'
 
 group :production do
 	gem 'pg'

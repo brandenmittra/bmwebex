@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  
+  before_filter :authenticate
+  
   def home
   end
 
@@ -15,5 +18,13 @@ class PagesController < ApplicationController
   end
 
   def register
+  end
+
+  protected
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "admin" && password == "barcelona"
+    end
   end
 end

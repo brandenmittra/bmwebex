@@ -1,52 +1,47 @@
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    #mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
 <form action="http://streamingwell.us2.list-manage.com/subscribe/post?u=0fb85c7f845ec3938ac18b24b&amp;id=87db4fa8c7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	
+    <h2></h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+    <label for="mce-FNAME">Name  <span class="asterisk">*</span>
 </label>
-	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+    <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span>
+    <label for="mce-MEDIA">Media Outlet  <span class="asterisk">*</span>
 </label>
-	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+    <input type="text" value="" name="MEDIA" class="required" id="mce-MEDIA">
 </div>
 <div class="mc-field-group">
-	<label for="mce-PUB">Publication  <span class="asterisk">*</span>
+    <label for="mce-COUNTRY">Country  <span class="asterisk">*</span>
 </label>
-	<input type="text" value="" name="PUB" class="required" id="mce-PUB">
+    <input type="text" value="" name="COUNTRY" class="required" id="mce-COUNTRY">
 </div>
 <div class="mc-field-group">
-	<label for="mce-COUNTRY">Country  <span class="asterisk">*</span>
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 </label>
-	<input type="text" value="" name="COUNTRY" class="required" id="mce-COUNTRY">
-</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group input-group">
     <strong>Terms and Conditions </strong>
     <ul><li><input type="checkbox" value="1" name="group[14073][1]" id="mce-group[14073]-14073-0"><label for="mce-group[14073]-14073-0">Please tick here to confirm you are a journalist.</label></li>
 </ul>
 </div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>	<div class="clear"><input type="submit" value="Register" name="subscribe" class="btn btn-primary btn-large"></div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>  <div class="clear"><input type="submit" value="Register" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-large"></div>
 </form>
 </div>
 <script type="text/javascript">
-var fnames = new Array();var ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='PUB';ftypes[3]='text';fnames[4]='COUNTRY';ftypes[4]='text';fnames[0]='EMAIL';ftypes[0]='email';
+var fnames = new Array();var ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[3]='MEDIA';ftypes[3]='text';fnames[4]='COUNTRY';ftypes[4]='text';fnames[0]='EMAIL';ftypes[0]='email';
 try {
     var jqueryLoaded=jQuery;
     jqueryLoaded=true;
@@ -109,7 +104,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://streamingwell.us2.list-manage1.com/subscribe/post-json?u=0fb85c7f845ec3938ac18b24b&id=87db4fa8c7&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://streamingwell.us2.list-manage.com/subscribe/post-json?u=0fb85c7f845ec3938ac18b24b&id=87db4fa8c7&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
@@ -129,17 +124,17 @@ function mce_init_form(){
                                             bday = true;
                                             fields[2] = {'value':1970};//trick birthdays into having years
                                         }
-                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else {
-									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
-									        } else {
-    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                        }
-	                                    }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else {
+                                            if (/\[day\]/.test(fields[0].name)){
+                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                                           
+                                            } else {
+                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                            }
+                                        }
                                     });
                             });
                         return mce_validator.form();
@@ -159,7 +154,7 @@ function mce_success_cb(resp){
         $('#mce-'+resp.result+'-response').html(resp.msg);
         $('#mc-embedded-subscribe-form').each(function(){
             this.reset();
-    	});
+        });
     } else {
         var index = -1;
         var msg;

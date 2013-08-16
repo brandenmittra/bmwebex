@@ -8,4 +8,9 @@ class NotificationsMailer < ActionMailer::Base
     mail(:subject => "Realise Asthma Q&A")
   end
 
+  def new_registration(registration)
+    @registration = registration
+    mail(:subject => "Realise Asthma Registration")
+  end
+
 end

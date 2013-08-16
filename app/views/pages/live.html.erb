@@ -1,8 +1,16 @@
 <div class="jumbotron">
-	<img src="http://placehold.it/750x400">
+	<h1>Realising the true impact of asthma - media briefing</h1>
+	<br>
+	<img src="assets/realise-webcast.png"/>
+	<!-- <iframe width="640" height="360" src="//www.youtube.com/embed/qeYthltbbAw" frameborder="0" allowfullscreen></iframe> -->
+<hr>
 
-	<hr>
+<div class="">
+	<h3 span5>Please submit your questions to the REALISE&trade; experts for the Q&A session below. </h3>
+</div>
 
+<br>
+<div id="flash_notice" style="display:none"></div>
 	<%= simple_form_for :message, :url => contact_path do |form| %>
 	  <fieldset class="fields">
 	    <div class="field">
@@ -12,9 +20,13 @@
 	    <div class="field">
 	      <%= form.text_field :country, placeholder: 'Country' %>
 	    </div>
+
+	    <div class="field">
+	      <%= form.text_field :doctor, placeholder: 'Who in the panel would you like to answer your question?' %>
+	    </div>
 	    
 	    <div class="field">
-	      <%= form.text_area :body, placeholder: 'Message', input_html: { rows: "3" } %>
+	      <%= form.text_area :body, placeholder: 'Question', :size => "30x5" %>
 	    </div>
 	  </fieldset>
 	  

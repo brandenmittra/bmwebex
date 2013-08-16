@@ -1,12 +1,12 @@
-class Message
+class Registration
 
   include ActiveModel::Validations
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :name, :country, :doctor, :body
+  attr_accessor :name, :media, :country, :email
 
-  validates :name, :country, :doctor, :body, :presence => true
+  validates :name, :media, :country, :email, :presence => true
   
   def initialize(attributes = {})
     attributes.each do |name, value|
