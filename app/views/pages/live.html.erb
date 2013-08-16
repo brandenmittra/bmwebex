@@ -9,33 +9,29 @@
 	<h3 span5>Please submit your questions to the REALISE&trade; experts for the Q&A session below. </h3>
 </div>
 
-<br>
-<div id="flash_notice" style="display:none"></div>
+	<div class="row">
+		<div class="offset3">
+			<div class="marketing-live">
+		<div id="flash_notice" style="display:none"></div>
 	<%= simple_form_for :message, :url => contact_path do |form| %>
 	  <fieldset class="fields">
-	    <div class="field">
-		  <%= form.label 'Name' %>	    	
+		  <%= form.label 'Name' %>
 	      <%= form.text_field :name %>
-	    </div>
 
-	    <div class="field">
 	      <%= form.label 'Country' %>
 	      <%= form.text_field :country %>
-	    </div>
 
-	    <div class="field">
 	      <%= form.label 'Who in the panel would you like to answer your question?' %>	
 	      <%= form.text_field :doctor %>
-	    </div>
-	    
-	    <div class="field">
 	      <%= form.label 'Question' %>
 	      <%= form.text_area :body, :size => "30x5" %>
-	    </div>
 	  </fieldset>
-	  
+	  <br>
 	  <fieldset class="actions">
 	    <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
 	  </fieldset>
 	</div>
 <% end %>
+</div>
+</div>
+</div>
