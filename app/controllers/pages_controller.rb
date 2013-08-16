@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   before_filter :authenticate
   
   def home
+    @home_page = true
   end
 
   def holding

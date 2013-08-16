@@ -14,19 +14,23 @@
 	<%= simple_form_for :message, :url => contact_path do |form| %>
 	  <fieldset class="fields">
 	    <div class="field">
-	      <%= form.text_field :name, placeholder: 'Name' %>
+		  <%= form.label 'Name' %>	    	
+	      <%= form.text_field :name %>
 	    </div>
 
 	    <div class="field">
-	      <%= form.text_field :country, placeholder: 'Country' %>
+	      <%= form.label 'Country' %>
+	      <%= form.text_field :country %>
 	    </div>
 
 	    <div class="field">
-	      <%= form.text_field :doctor, placeholder: 'Who in the panel would you like to answer your question?' %>
+	      <%= form.label 'Who in the panel would you like to answer your question?' %>	
+	      <%= form.text_field :doctor %>
 	    </div>
 	    
 	    <div class="field">
-	      <%= form.text_area :body, placeholder: 'Question', :size => "30x5" %>
+	      <%= form.label 'Question' %>
+	      <%= form.text_area :body, :size => "30x5" %>
 	    </div>
 	  </fieldset>
 	  

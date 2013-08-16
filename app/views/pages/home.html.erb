@@ -1,3 +1,5 @@
+<body class="<%= @home_page ? 'homepage' : ''%>">
+
 <div class="container">
 	<div class="jumbotron">
 
@@ -33,30 +35,37 @@
 		<%= simple_form_for :registration, :url => registration_path do |form| %>
 		  <fieldset class="fields">
 		    <div class="field">
-		      <%= form.text_field :name, placeholder: 'Name' %>
+		      <%= form.label 'Name' %>
+		      <%= form.text_field :name %>
 		    </div>
 
 		    <div class="field">
-		      <%= form.text_field :media, placeholder: 'Media Outlet' %>
+		      <%= form.label 'Media Outlet' %>
+		      <%= form.text_field :media %>
 		    </div>
 
 		    <div class="field">
-		      <%= form.text_field :country, placeholder: 'Country' %>
+		      <%= form.label 'Country' %>
+		      <%= form.text_field :country %>
 		    </div>
 		    
 		    <div class="field">
-		      <%= form.text_field :email, placeholder: 'E-mail' %>
+		      <%= form.label 'E-mail' %>
+		      <%= form.text_field :email%>
 		    </div>
 		  </fieldset>
 		  	
 		  	<div class="field">
 				<p><input id="accept" name="accept" type="checkbox" value="1" />&nbsp Please tick here to confirm you are a journalist.</p>
 			</div>		  
-		  
+		  <br>
 		  <fieldset class="actions">
 		    <%= form.submit "Register", class: 'btn btn-primary btn-large' %>
 		  </fieldset>
 		</div>
 	<% end %>
 
-</div>			
+</div>		
+
+<%= yield %>
+</body>	
