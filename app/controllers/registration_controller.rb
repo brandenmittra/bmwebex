@@ -9,7 +9,7 @@ def new
     
     if @registration.valid?
       RegistrationsMailer.new_registration(@registration).deliver
-      redirect_to(welcome_path, :notice => "You have successfully registered.")
+      redirect_to(welcome_path, :notice => "You have successfully registered. We'll send you a confirmation email shortly.")
 
     else
       flash.now.alert = "Please fill all fields."
