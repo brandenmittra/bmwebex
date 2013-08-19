@@ -27,7 +27,7 @@ body.homepage {
 }
 
 .navbar .container {
-	width: 1024px;
+	max-width: 1024px;
 }
 
 .navbar-inner{
@@ -269,5 +269,32 @@ border-bottom: none;
 }
 
 .webcast p {
+	color: #000;
+}
+
+.live {
+	text-align: center;
+	font-family: Arial;
+	color: rgb(101, 102, 106);
+	padding: 10px 10px 20px 10px;
+	display: block;
+	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	max-width: 99%;
+	min-width: 220px;
+}
+
+.live h1 {
+	font-size: 24pt;
+	font-family: arial;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.live p {
 	color: #000;
 }
