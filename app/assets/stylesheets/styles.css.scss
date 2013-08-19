@@ -6,7 +6,8 @@ $btnPrimaryBackground: purple;
 
 body {
     padding-top: 0px;
-    height: 100%;     
+    height: 100%;   
+    color: rgb(0, 103, 182); 
 }
 
 body.homepage {
@@ -57,6 +58,7 @@ body.homepage {
 .jumbotron {
 	text-align: center;
 	font-family: Arial;
+	color: white;
 	padding: 10px 10px 20px 10px;
 	display: block;
 	border-width: 1px;
@@ -71,23 +73,22 @@ body.homepage {
 	min-width: 220px;
 	border-radius: 5px 5px 5px 5px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-	background-color: rgb(245, 248, 250);
+	background-color: rgb(38, 183, 194);
 	background-repeat: repeat-x;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
 .jumbotron h1 {
-	font-size: 24pt;
+	font-size: 30pt;
 	font-family: arial;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
 
 .jumbotron h3 {
-	font-size: 13pt;
+	font-size: 16pt;
 	font-style: bold;
-	color: rgb(255, 110, 0);
-   	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+	color: rgb(255,255,255);
 }
 
 .jumbotron p {
@@ -104,8 +105,7 @@ body.homepage {
 
 .marketing-live {
 	text-align: left;
-	margin: 35px;
-	margin-bottom: 10px;
+	margin-left: 150px;
 }
 
 
@@ -138,9 +138,10 @@ ul, ol {
 }
 
 a {
-	color: rgb(255, 110, 0);
+	color: rgb(255, 255, 255);
 	font-size: 11pt;
 	font-weight: 500;
+	text-shadow: none;
 }
 
 a:hover {
@@ -204,19 +205,19 @@ a:hover {
 
 
 #message_name {
-	width: 50%;
+	width: 80%;
 }
 
 #message_country {
-	width: 50%;
+	width: 80%;
 }
 
 #message_doctor {
-	width: 50%;
+	width: 80%;
 }
 
 #message_body {
-	width: 50%;
+	width: 80%;
 }
 
 #registration_name {
@@ -238,4 +239,35 @@ a:hover {
 abbr[title], abbr[data-original-title] {
 cursor: help;
 border-bottom: none;
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: transparent;
+}
+
+.webcast {
+	text-align: center;
+	font-family: Arial;
+	color: rgb(0, 103, 182);
+	padding: 10px 10px 20px 10px;
+	display: block;
+	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	max-width: 99%;
+	min-width: 220px;
+}
+
+.webcast h1 {
+	font-size: 22pt;
+	font-family: arial;
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.webcast p {
+	color: #000;
 }
