@@ -2,12 +2,14 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 $btnPrimaryBackground: purple;
 
+
 @import 'bootstrap';
 
 body {
     padding-top: 0px;
     height: 100%;   
-    color: rgb(0, 103, 182); 
+    color: rgb(0, 103, 182);
+
 }
 
 body.homepage {
@@ -53,12 +55,12 @@ body.homepage {
 	margin-bottom: 20px;
 	color: #000;
 	text-align: center;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .jumbotron {
 	text-align: center;
-	font-family: Arial;
-	color: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	color: white;
 	padding: 10px 10px 20px 10px;
 	display: block;
 	border-width: 1px;
@@ -80,7 +82,6 @@ body.homepage {
 
 .jumbotron h1 {
 	font-size: 30pt;
-	font-family: arial;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
@@ -93,13 +94,13 @@ body.homepage {
 
 .jumbotron p {
 	font-size: 11pt;
-	   	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
 
 .jumbotron-realise {
 	text-align: center;
-	font-family: Arial;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: white;
 	padding: 10px 20px 20px 10px;
 	display: block;
@@ -122,20 +123,20 @@ body.homepage {
 
 .jumbotron-realise h1 {
 	font-size: 30pt;
-	font-family: arial;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
 
 .jumbotron-realise h3 {
 	font-size: 16pt;
+	font-family: Arial;
 	font-style: bold;
 	color: rgb(255,255,255);
 }
 
 .jumbotron-realise p {
 	font-size: 11pt;
-	   	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
 
@@ -143,11 +144,15 @@ body.homepage {
 	text-align: left;
 	margin: 35px;
 	margin-bottom: 100px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 .marketing-live {
 	text-align: left;
 	margin-left: 150px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 
@@ -184,6 +189,8 @@ a {
 	font-size: 11pt;
 	font-weight: 500;
 	text-shadow: none;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 a:hover {
@@ -289,8 +296,8 @@ border-bottom: none;
 
 .webcast {
 	text-align: center;
-	font-family: Arial;
-	color: rgb(0, 103, 182);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: rgb(101, 102, 106);
 	padding: 10px 10px 20px 10px;
 	display: block;
 	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
@@ -304,8 +311,8 @@ border-bottom: none;
 }
 
 .webcast h1 {
-	font-size: 22pt;
-	font-family: arial;
+	font-size: 30pt;
+	font-family: Arial;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
@@ -316,7 +323,7 @@ border-bottom: none;
 
 .live {
 	text-align: center;
-	font-family: Arial;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	color: rgb(101, 102, 106);
 	padding: 10px 10px 20px 10px;
 	display: block;
@@ -331,12 +338,20 @@ border-bottom: none;
 }
 
 .live h1 {
-	font-size: 24pt;
-	font-family: arial;
+	font-size: 30pt;
+	font-family: Arial;
 	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
 
 }
 
 .live p {
 	color: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+p, ol, ul, td {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
 }
