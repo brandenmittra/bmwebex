@@ -1,7 +1,7 @@
 class RegistrationsMailer < ActionMailer::Base
 
-  default :from => "branden.mittra@streamingwell.com"
-  default :to => "branden.mittra@streamingwell.com"
+  default :from => "chloe@auroracomms.com"
+  default :to => "chloe@auroracomms.com"
 
   def new_registration(registration)
     @registration = registration
