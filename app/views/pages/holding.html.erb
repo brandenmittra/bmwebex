@@ -1,5 +1,35 @@
-<div class="jumbotron">
+<div class="live">
+	<h1>Realising the true impact of asthma</h1>
 	<br>
-	<h1>This website is under construction, please check back again.</h1>
-	<br>
+	<img src="assets/realise-webcast.png"/>
+	<!-- <iframe width="640" height="360" src="//www.youtube.com/embed/qeYthltbbAw" frameborder="0" allowfullscreen></iframe> -->
+<p>
+	<div class="row">
+<div class="jumbotron-realise span6 offset2">
+	<h3 span5>Please submit your questions to the REALISE&trade; experts for the Q&A session below. </h3>
+	<div class="row">
+			<div class="marketing-live">
+		<div id="flash_notice" style="display:none"></div>
+	<%= simple_form_for :message, :url => contact_path do |form| %>
+	  <fieldset class="fields">
+		  <%= form.label 'Name' %>
+	      <%= form.text_field :name %>
+
+	      <%= form.label 'Country' %>
+	      <%= form.text_field :country %>
+
+	      <%= form.label 'Who in the panel would you like to answer your question?' %>	
+	      <%= form.text_field :doctor %>
+	      <%= form.label 'Question' %>
+	      <%= form.text_area :body, :size => "30x5" %>
+	  </fieldset>
+	  <br>
+	  <fieldset class="actions">
+	    <%= form.submit "Send", class: 'btn btn-primary btn-large' %>
+	  </fieldset>
+	</div>
+<% end %>
+</div>
+</div>
+</div>
 </div>
