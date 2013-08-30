@@ -27,6 +27,7 @@
 
 	<div id="flash_notice" style="display:none"></div>
 		<%= simple_form_for :registration, :url => registration_path do |form| %>
+		<%= form.error_notification %>
 		  <fieldset class="fields">
 		    <div class="field">
 		      <%= form.label 'Name' %>
@@ -50,7 +51,7 @@
 		  </fieldset>
 		  	
 		  	<div class="field">
-				<p><input id="accept" name="accept" type="checkbox" value="1" />&nbsp Please tick here to confirm you are a journalist.</p>
+				<%= form.input :journalist, :as => :boolean, :required => true, label: "Please tick to confirm you are a journalist." %>
 			</div>		  
 		  <br>
 		  <fieldset class="actions">

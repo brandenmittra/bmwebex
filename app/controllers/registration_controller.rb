@@ -12,8 +12,7 @@ def new
       redirect_to(welcome_path, :notice => "You have successfully registered. We'll send you a confirmation email shortly.")
 
     else
-      flash.now.alert = "Please fill all fields."
-      render :new
+      redirect_to(root_path, :notice => "Please fill all fields and tick to confirm you are a journalist.")
     end
   end
 

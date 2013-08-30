@@ -12,16 +12,20 @@
     
     <div class="field">
       <%= form.label :country %>
-      <%= form.text_area :country %>
+      <%= form.text_field :country %>
     </div>
 
     <div class="field">
       <%= form.label :email %>
-      <%= form.text_area :email %>
+      <%= form.text_field :email %>
+    </div>
+
+    <div class="field">
+      <%= form.input :journalist, :as => :boolean, :required => true, label: "Please tick to confirm you are a journalist." %>
     </div>
   </fieldset>
   
   <fieldset class="actions">
-    <%= form.submit "Register" %>
-  </fieldset>
+        <%= form.submit "Register", class: 'btn btn-primary btn-large' %>
+      </fieldset>
 <% end %>
