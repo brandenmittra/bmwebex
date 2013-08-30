@@ -6,7 +6,7 @@ class RegistrationsMailer < ActionMailer::Base
 
   def new_registration(registration)
     @registration = registration
-    mail(:subject => "Realise Asthma Registration")
+    mail(:subject => "REALISE Asthma Registration")
   end
 
 end
