@@ -28,27 +28,10 @@
 	<div id="flash_notice" style="display:none"></div>
 		<%= simple_form_for :registration, :url => registration_path do |form| %>
 		<%= form.error_notification %>
-		  <fieldset class="fields">
-		    <div class="field">
-		      <%= form.label 'Name' %>
-		      <%= form.text_field :name %>
-		    </div>
-
-		    <div class="field">
-		      <%= form.label 'Media Outlet' %>
-		      <%= form.text_field :media %>
-		    </div>
-
-		    <div class="field">
-		      <%= form.label 'Country' %>
-		      <%= form.text_field :country %>
-		    </div>
-		    
-		    <div class="field">
-		      <%= form.label 'E-mail' %>
-		      <%= form.text_field :email%>
-		    </div>
-		  </fieldset>
+		  <%= form.input :name %>
+		  <%= form.input :media %>
+	  		<%= form.input :country %>
+	  		<%= form.input :email %>
 		  	
 		  	<div class="field">
 				<%= form.input :journalist, :as => :boolean, :required => true, label: "Please tick to confirm you are a journalist." %>

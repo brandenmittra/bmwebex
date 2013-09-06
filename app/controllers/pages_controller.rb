@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def holding
+    @message = Message.new
   end
 
   def about
