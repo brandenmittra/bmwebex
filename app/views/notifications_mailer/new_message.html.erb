@@ -1,7 +1,12 @@
-Name: <%= @message.name %>
-
-Country: <%= @message.country %>
-
-Who in the panel would you like to answer your question?: <%= @message.doctor %>
-
-Question: <%= simple_format @message.body %>
+<p>
+	<strong>Name:</strong> <%= @message.name %>
+</p>
+<p>
+	<strong>Country:</strong> <%= @message.country %>
+</p>
+<p>
+	<strong>Who in the panel would you like to answer your question?:</strong> <%= @message.doctor %>
+</p>
+<p>
+	<strong>Question:</strong> <%= simple_format @message.body %>
+</p>
