@@ -9,7 +9,7 @@ def new
     
     if @message.valid?
        @success = true
-      # NotificationsMailer.new_message(@message).deliver
+      NotificationsMailer.new_message(@message).deliver
       # redirect_to(live_path, :notice => "Message was successfully sent.")
       respond_to do |format|
         format.js
