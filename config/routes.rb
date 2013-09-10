@@ -11,7 +11,7 @@ Aurmicrosite::Application.routes.draw do
   
   get 'holding' => 'pages#holding'
   get 'about' => 'pages#about'
-  get 'welcome' => 'pages#welcome'
+  get 'welcome' => 'pages#live'
   get 'webcast' => 'pages#webcast'
 
   get 'live' => 'pages#live'
