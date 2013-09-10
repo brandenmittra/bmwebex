@@ -14,7 +14,7 @@ Aurmicrosite::Application.routes.draw do
   # get 'welcome' => 'pages#live'
   # get 'webcast' => 'pages#webcast'
 
-  get 'live' => 'pages#home'
+  get 'live' => 'pages#live'
 
 
   # The priority is based upon order of creation:
