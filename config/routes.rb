@@ -9,12 +9,12 @@ Aurmicrosite::Application.routes.draw do
 
   root :to => 'pages#home'
   
-  get 'holding' => 'pages#holding'
-  get 'about' => 'pages#about'
-  get 'welcome' => 'pages#live'
-  get 'webcast' => 'pages#webcast'
+  # get 'holding' => 'pages#holding'
+  # get 'about' => 'pages#about'
+  # get 'welcome' => 'pages#live'
+  # get 'webcast' => 'pages#webcast'
 
-  get 'live' => 'pages#live'
+  # get 'live' => 'pages#live'
 
 
   # The priority is based upon order of creation:

@@ -80,25 +80,17 @@ body.homepage {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-jumbotron-test {
+.jumbotron-post-webcast{
 	text-align: center;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;	color: white;
-	padding: 10px 10px 20px 10px;
+	padding: 10px 10px 0px 10px;
 	display: block;
-	border-width: 1px;
-	border-style: solid;
-	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
-	-moz-border-top-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	border-image: none;
 	max-width: 100%;
-	border-radius: 5px 5px 5px 5px;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
-	background-color: rgb(38, 183, 194);
-	background-repeat: repeat-x;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	background-color: none;
+}
+
+.jumbotron-post-webcast a{
+	color: rgb(38, 183, 194);
 }
 
 .jumbotron h1 {
