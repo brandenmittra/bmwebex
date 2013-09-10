@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def live
+    @message = Message.new
   end
 
   def confirm
