@@ -1,12 +1,12 @@
 class RegistrationsMailer < ActionMailer::Base
 
-  default :from => "candice@auroracomms.com"
-  default :to => "carolin@auroracomms.com"
+  default :from => "branden.mittra@streamingwell.com"
+  default :to => "branden.mittra@streamingwell.com"
   default :bcc => "branden.mittra@streamingwell.com"
 
   def new_registration(registration)
     @registration = registration
-    mail(:subject => "REALISE Asthma Registration")
+    mail(:subject => "Bayer Webex Login")
   end
 
 end

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Aurmicrosite::Application.load_tasks
+Bayer::Application.load_tasks

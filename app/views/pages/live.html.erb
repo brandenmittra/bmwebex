@@ -1,26 +1,45 @@
 <div class="live">
-		<h1>Realising the true impact of asthma</h1>
+	<!-- <img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
+  <h2 style="color:#0090C5; margin-bottom: 10px;">Bayer Medical Webex Portal</h2> -->
+	<h2 style="color: #333333;">Cancer- and treatment-related fatigue</h2>
+	<h4 style="color: #390;">Dr Matti Aapro</h4>
 	<br>
+	<img src="assets/realise-webcast.png"/>
+	<!-- <img src="assets/countdown.png"/>	-->
 
-	<!-- <img src="assets/realise-webcast.png"/> -->
-	<!-- <iframe width="768" height="462" src="http://cdn.livestream.com/embed/fanaticgrouptv?layout=4&color=0xe7e7e7&autoPlay=false&mute=false&iconColorOver=0x888888&iconColor=0x777777&allowchat=true&height=385&width=640" style="border:0;outline:0" frameborder="0" scrolling="no"></iframe> -->
+<p>
 
-	<!-- INSERT VIMEO EMBED CODE HERE -->
-	<div class="flex-video widescreen vimeo">
-		<iframe src="//player.vimeo.com/video/74208476?title=0&amp;byline=0&amp;portrait=0&amp;color=4cbdec" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	
+
+	<div class="row">
+
+<div class="live span6 offset2">
+		<!-- flash_notice to show if form submission is successful -->
+	<div class="alert alert-notice" id="form-success" style="display: none;">
+		You've raised your hand, Dr Aapro will take your question shortly.
 	</div>
-	<br>
-</br>
-<div class="jumbotron-post-webcast">
-			<p>
-				Should you wish to set up interviews with the REALISE&trade; survey experts, please do not hesitate to contact:</p>
-				<p>Jenna Seymour on +44 (0)791 874 8590 or <%= link_to "Jenna.Seymour@mundipharma.co.uk", "mailto:Jenna.Seymour@mundipharma.co.uk" %>
-				<p>
-				 <p>or</p>
-				 <p>
-					Candice Debleu on +44 (0)207 148 3629 or <%= link_to "candice@auroracomms.com", "mailto:candice@auroracomms.com" %>
-				</p>
-			</div>
 
+	<!-- flash_notice to show if form submission is unsuccessful -->
+	<div class="alert alert-notice" id="form-error" style="display: none;">
+		Please fill in all fields.
+	</div>
+
+	<h4 style="color:#390;">To ask a question, please type your name in the box below and click "Raise your hand".</h4>
+	<div class="row">
+			<div class="marketing-live">
+
+		<div id="flash_notice" style="display:none"></div>
+	<%= simple_form_for @message, :url => contact_path, method: :post, remote: true do |form| %>
+
+	  		<%= form.input :name, label: 'Name' %>
+
+	  <br>
+	  <fieldset class="actions">
+	    <%= form.submit "Raise your hand", class: 'btn btn-primary btn-large' %>
+	  </fieldset>
+	</div>
+<% end %>
 </div>
-
+</div>
+</div>
+</div>

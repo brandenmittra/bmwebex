@@ -1,31 +1,23 @@
 <%= simple_form_for :registration, :url => registration_path do |form| %>
   <fieldset class="fields">
     <div class="field">
-      <%= form.label :name %>
-      <%= form.text_field :name %>
+      <%= form.label :fname %>
+      <%= form.text_field :fname %>
     </div>
     
     <div class="field">
-      <%= form.label :media %>
-      <%= form.text_field :media %>
+      <%= form.label :lname %>
+      <%= form.text_field :lname %>
     </div>
     
-    <div class="field">
-      <%= form.label :country %>
-      <%= form.text_field :country %>
-    </div>
-
     <div class="field">
       <%= form.label :email %>
       <%= form.text_field :email %>
     </div>
 
-    <div class="field">
-      <%= form.input :journalist, :as => :boolean, :required => true, label: "Please tick to confirm you are a journalist." %>
-    </div>
   </fieldset>
   
   <fieldset class="actions">
-        <%= form.submit "Register", class: 'btn btn-primary btn-large' %>
+        <%= form.submit "Login", class: 'btn btn-primary btn-large' %>
       </fieldset>
 <% end %>
