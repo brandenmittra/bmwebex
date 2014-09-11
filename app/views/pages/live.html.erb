@@ -11,9 +11,9 @@
 
 	
 
-	<div class="row">
+	<div class="row" align="left">
 
-<div class="live span6 offset2">
+<div class="Absolute-center span6 offset2" align="center" style="padding: 20px;">
 		<!-- flash_notice to show if form submission is successful -->
 	<div class="alert alert-notice" id="form-success" style="display: none;">
 		You've raised your hand, Dr Aapro will take your question shortly.
@@ -25,13 +25,12 @@
 	</div>
 
 	<h4 style="color:#390;">To ask a question, please type your name in the box below and click "Raise your hand".</h4>
-	<div class="row">
-			<div class="marketing-live">
+
 
 		<div id="flash_notice" style="display:none"></div>
 	<%= simple_form_for @message, :url => contact_path, method: :post, remote: true do |form| %>
 
-	  		<%= form.input :name, label: 'Name' %>
+	  		<%= form.input :name, label: 'Name'%>
 
 	  <br>
 	  <fieldset class="actions">
@@ -39,7 +38,6 @@
 	  </fieldset>
 	</div>
 <% end %>
-</div>
 </div>
 </div>
 </div>
