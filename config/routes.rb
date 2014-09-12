@@ -13,6 +13,7 @@ Aurmicrosite::Application.routes.draw do
   get 'login' => 'pages#login'
   get 'welcome' => 'pages#live'
   get 'webcast' => 'pages#webcast'
+  get 'help' => 'pages#help'
 
   get 'live' => 'pages#live'
 
