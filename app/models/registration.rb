@@ -4,9 +4,9 @@ class Registration
   include ActiveModel::Conversion
   extend ActiveModel::Naming
 
-  attr_accessor :fname, :lname, :email
+  attr_accessor :fname, :lname, :email, :job
 
-  validates :fname, :lname, :email, :presence => true
+  validates :fname, :lname, :email, :job, :presence => true
   
   def initialize(attributes = {})
     attributes.each do |name, value|
