@@ -1,36 +1,34 @@
-<div class="live" style="margin-top: -50px;">
+<div class="jumbotron" style="margin-top: -20px; background-color: #f3f3f3; color: #f3f3f3;">
+
 	<!-- <img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
+
   <h2 style="color:#0090C5; margin-bottom: 10px;">Bayer Medical Webex Portal</h2> -->
-	<h2 style="color: #333333;">Cancer- and treatment-related fatigue</h2>
-	<h4 style="color: #390;">Dr Matti Aapro</h4>
+  <div class="row">
+	<h2 style="color: #0090C5;">Cancer- and treatment-related fatigue</h2>
+	<h4 style="color: #333;">Dr Matti Aapro</h4>
 	<br>
 	<img src="assets/realise-webcast.png"/>
 	<!-- <img src="assets/countdown.png"/>	-->
-
-<p>
-
 	
 
-	<div class="row" align="left">
-
-<div class="Absolute-center span6 offset2" align="center" style="padding-left: 50px;">
+	<div class="span5 offset3" align="center" style="padding-left: 0px;">
 		<!-- flash_notice to show if form submission is successful -->
-	<div class="alert alert-notice" id="form-success" style="display: none;">
-		You've raised your hand, Dr Aapro will take your question shortly.
-	</div>
+		<div class="alert alert-notice" id="form-success" style="display: none;">
+			You've raised your hand, Dr Aapro will take your question shortly.
+		</div>
 
-	<!-- flash_notice to show if form submission is unsuccessful -->
-	<div class="alert alert-notice" id="form-error" style="display: none;">
-		Please fill in all fields.
-	</div>
+		<!-- flash_notice to show if form submission is unsuccessful -->
+		<div class="alert alert-notice" id="form-error" style="display: none;">
+			Please fill in all fields.
+		</div>
 
-	<h4 style="color:#390;">To ask a question, please type your name in the box below and click "Raise your hand".</h4>
+		<h4 style="color:#390;">To ask a question, please type your name in the box below and click "Raise your hand".</h4>
 
 
 		<div id="flash_notice" style="display:none"></div>
-	<%= simple_form_for @message, :url => contact_path, method: :post, remote: true do |form| %>
+			<%= simple_form_for @message, :url => contact_path, method: :post, remote: true do |form| %>
 
-	  		<%= form.input :name, label: 'Name'%>
+	  	<%= form.input :name, label: 'Name'%>
 
 	  <br>
 	  <fieldset class="actions">
@@ -40,4 +38,5 @@
 <% end %>
 </div>
 </div>
-</div>
+<br />
+<p align="center">If you experience difficulties playing the video, please visit the <%= link_to "Help Centre", help_path %>.</p>

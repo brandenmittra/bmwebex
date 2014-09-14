@@ -1,6 +1,6 @@
 $navbarBackgroundHighlight: #f3f3f3;
 $navbarBackground: #f3f3f3;
-$btnPrimaryBackground: #ffffff;
+$btnPrimaryBackground: #f3f3f3;
 
 
 @import 'bootstrap';
@@ -23,6 +23,11 @@ body.homepage {
 @import 'bootstrap-responsive';
 
 
+.container {
+	max-width: 1024px;
+	height: 100;
+}
+
 .navbar .container {
 	max-width: 1024px;
 }
@@ -31,14 +36,13 @@ body.homepage {
     @include box-shadow(none !important);
     border: 0;
     padding-top: 15px;
-    background: #0090C5;
-    border-radius: 0px;
-    color: #fff;
-    text-align: right;
+    background: transparent;
 }
 
-.navbar-inner a {
-	color: #fff !important;
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    background-color: none;
+    color: rgb(255, 110, 0);
+    text-decoration: none;
 }
 
 .brand:hover {
@@ -68,7 +72,8 @@ body.homepage {
 	-moz-border-bottom-colors: none;
 	-moz-border-left-colors: none;
 	border-image: none;
-	border-radius: 0px 0px 5px 5px;
+	max-width: 100%;
+	border-radius: 5px 5px 5px 5px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 	background-color: rgb(38, 183, 194);
 	background-repeat: repeat-x;
@@ -109,7 +114,7 @@ body.homepage {
 .jumbotron a {
 	font-size: 12pt;
 	font-weight: 100;
-	color: #390;
+	color: #000;
 }
 
 .jumbotron p {
@@ -181,7 +186,8 @@ body.homepage {
 }
 
 .btn-primary {
-	color: #fff;
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
 	background-color: #0090C5;
 	background-image: none;
 	background-repeat: none;
@@ -189,7 +195,8 @@ body.homepage {
 }
 
 .btn-primary:hover {
-	color: #fff;
+	color: white;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
 	background-color: #390;
 	background-image: none;
 	background-repeat: none;
@@ -202,7 +209,7 @@ ul, ol {
 }
 
 a {
-	color: #390;
+	color: rgb(255, 255, 255);
 	font-size: 11pt;
 	font-weight: 500;
 	text-shadow: none;
@@ -271,99 +278,28 @@ a:hover {
 
 
 #message_name {
-	width: 95%;
+	width: 70%;
 }
 
 #registration_fname {
-	width: 95%;
+	width: 70%;
 }
 
 #registration_lname {
-	width: 95%;
+	width: 70%;
 }
 
 #registration_email {
-	width: 95%;
+	width: 70%;
 }
 
 #registration_job {
-	width: 95%;
+	width: 70%;
 }
 
 abbr[title], abbr[data-original-title] {
 cursor: help;
-border-bottom: none;
-}
-
-.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
-    background-color: transparent;
-}
-
-.webcast {
-	text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: rgb(101, 102, 106);
-	padding: 10px 10px 20px 10px;
-	display: block;
-	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
-	-moz-border-top-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	border-image: none;
-	max-width: 99%;
-	min-width: 220px;
-}
-
-.webcast h1 {
-	font-size: 30pt;
-	font-family: Arial;
-	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
-
-}
-
-.webcast p {
-	color: #000;
-}
-
-.live {
-	text-align: center;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #f3f3f3;
-	padding: 10px 10px 20px 10px;
-	display: block;
-	border-color: rgb(238, 238, 238) rgb(221, 221, 221) rgb(187, 187, 187);
-	-moz-border-top-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	border-image: none;
-	max-width: 99%;
-	min-width: 220px;
-}
-
-.live h1 {
-	font-size: 30pt;
-	font-family: Arial;
-	text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
-
-}
-
-.live p {
-	color: #000;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-}
-
-p, ol, ul, td {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.jumbotron-realise .alert {
-	margin-left: 10px;
-}
+a
 
 .Absolute-Center {
   margin: auto;
@@ -372,9 +308,18 @@ p, ol, ul, td {
 }
 
 a {
-    color: #390 !important;
+    color: #390;
     font-size: 11pt;
     font-weight: 500;
     text-shadow: none;
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+.alert {
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 40px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
 }

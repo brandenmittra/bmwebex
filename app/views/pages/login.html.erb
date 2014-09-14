@@ -1,7 +1,7 @@
 <body class="<%= @home_page ? 'homepage' : ''%>">
 
 <div class="container">
-	<div class="jumbotron" style="background-color: #fff; padding: 20px;">
+	<div class="jumbotron" style="background-color: #fff; padding: 20px; margin-top: -20px;">
 
 
 		<!-- <h1>
@@ -24,10 +24,8 @@
        
       </div>
 
-      <br />
-
 			<div class="row">
-				<div class="span6" align="left" style="margin-left: 50px;">
+				<div class="span6" align="left" style="padding-left: 0px;">
 					<img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
        		<h2 style="color:#0090C5; margin-bottom: 10px;">Bayer Medical Webex Portal</h2>
        		
@@ -50,7 +48,7 @@
         	Please arrive 5 minutes early to log-on.</p>  
         </div>
         <br/>
-        <div class="span4" align="left" style="margin-top: 40px; margin-left: 20px;">
+        <div class="span5" align="left" style="margin-top: 40px; padding-left: 20px;">
         		<div id="flash_notice" style="display:none"></div>
 						<%= simple_form_for :registration, :url => registration_path do |form| %>
 						<%= form.error_notification %>
