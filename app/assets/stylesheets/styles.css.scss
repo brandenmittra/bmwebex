@@ -31,10 +31,11 @@ body.homepage {
     @include box-shadow(none !important);
     border: 0;
     padding-top: 15px;
-    background-color: #0090C5;
+    background: #0090C5;
     border-radius: 0px;
     color: #fff;
     text-align: right;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 .navbar-inner a {
@@ -42,7 +43,7 @@ body.homepage {
 }
 
 .brand:hover {
-	background-color: #;
+	background-color: transparent;
 }
 
 .footer {
