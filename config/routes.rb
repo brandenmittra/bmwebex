@@ -12,7 +12,7 @@ Aurmicrosite::Application.routes.draw do
   get 'holding' => 'pages#holding'
   get 'login' => 'pages#login'
   get 'welcome' => 'pages#live'
-  get 'webcast' => 'pages#webcast'
+  get 'dialin' => 'pages#dialin'
   get 'help' => 'pages#help'
 
   get 'live' => 'pages#live'
