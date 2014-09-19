@@ -17,6 +17,9 @@ Aurmicrosite::Application.routes.draw do
 
   get 'live' => 'pages#live'
 
+  get 'live2' => 'pages#live2'
+  get 'live_backup' => 'pages#live_backup'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

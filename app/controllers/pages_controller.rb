@@ -15,6 +15,14 @@ class PagesController < ApplicationController
     @message = Message.new
   end
 
+  def live2
+    @message = Message.new
+  end
+
+  def live_backup
+    @message = Message.new
+  end
+
   def confirm
   end
 
