@@ -1,4 +1,4 @@
-<div class="jumbotron" style="margin-top: -20px; background-color: #f3f3f3; color: #f3f3f3;">
+<div class="jumbotron" style="margin-top: -20px; background-color: #f3f3f3; color: #333;">
 
 	<!-- <img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
 
@@ -20,17 +20,19 @@
 			Please fill in all fields.
 		</div>
 
-		<h4 style="color:#390;">Please type in your name to ask a question to Dr Aapro or alternatively type in your question for the moderator.</h4>
+		<h4 style="color:#390;">To ask a question, please use the form below.</h4>
 
 
-		<div id="flash_notice" style="display:none"></div>
+		<div style="text-align:left">
+			<div id="flash_notice" style="display:none;"></div>
 			<%= simple_form_for @message, :url => contact_path, method: :post, remote: true do |form| %>
 
-	  	<%= form.input :name, label: 'Name'%>
-
+	  	<%= form.input :name, label: 'Name' %>
+	  	<%= form.input :question, label: 'Question', required: true, as: :text, input_html: { rows: "3" } %>
+</div>
 	  <br>
 	  <fieldset class="actions">
-	    <%= form.submit "Raise your hand", class: 'btn btn-primary btn-large' %>
+	    <%= form.submit "Submit", class: 'btn btn-primary btn-large' %>
 	  </fieldset>
 	</div>
 <% end %>
