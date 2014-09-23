@@ -11,9 +11,10 @@ Aurmicrosite::Application.routes.draw do
   
   #get 'holding' => 'pages#holding'
   #get 'login' => 'pages#login'
-  #get 'welcome' => 'pages#live'
+  get 'welcome' => 'pages#live'
   #get 'dialin' => 'pages#dialin'
   get 'help' => 'pages#help'
+  get 'archive' => 'pages#archive'
 
   # get 'live' => 'pages#live'
 
