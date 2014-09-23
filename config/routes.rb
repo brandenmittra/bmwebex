@@ -9,16 +9,16 @@ Aurmicrosite::Application.routes.draw do
 
   root :to => 'pages#home'
   
-  get 'holding' => 'pages#holding'
-  get 'login' => 'pages#login'
-  get 'welcome' => 'pages#live'
-  get 'dialin' => 'pages#dialin'
+  #get 'holding' => 'pages#holding'
+  #get 'login' => 'pages#login'
+  #get 'welcome' => 'pages#live'
+  #get 'dialin' => 'pages#dialin'
   get 'help' => 'pages#help'
 
-  get 'live' => 'pages#live'
+  # get 'live' => 'pages#live'
 
-  get 'live2' => 'pages#live2'
-  get 'live_backup' => 'pages#live_backup'
+  #get 'live2' => 'pages#live2'
+  #get 'live_backup' => 'pages#live_backup'
 
 
   # The priority is based upon order of creation:
