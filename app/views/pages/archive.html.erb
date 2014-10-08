@@ -1,6 +1,5 @@
-<body class="<%= @home_page ? 'homepage' : ''%>">
 <div class="navbar">
-  <div class="navbar-inner">
+  <!-- <div class="navbar-inner">
     <div class="container">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -8,89 +7,18 @@
 				<%= link_to "Home", root_path %> | <%= link_to "Help Centre", help_path %>
 	     </div>
     </div>
+</div> -->
+<div class="jumbotron" style="margin-top: -20px; background-color: #f3f3f3; color: #f3f3f3;">
+
+	<!-- <img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
+
+  <h2 style="color:#0090C5; margin-bottom: 10px;">Bayer Medical Webex Portal</h2> -->
+  <div class="row">
+		<h4 style="color: #333;">Previous Presentation: 22nd September 2014</h4>
+		<h2 style="color: #0090C5;">Cancer- and treatment-related fatigue</h2>
+		<h4 style="color: #333;">Dr Matti Aapro</h4>
+		<iframe src="//player.vimeo.com/video/108346409" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
 </div>
-<div class="container">
-	<div class="jumbotron" style="background-color: #fff; padding: 20px; margin-top: -20px;">
-
-
-		<!-- <h1>
-			Realising <strong>the true impact</strong> of asthma
-		</h1>
-
-		<p><i>
-			 European Respiratory Society (ERS) Annual Congress 2013
-		</p>
-
-		<p>
-			Tuesday 10 September, 14:30 – 15:15 CET
-		</i></p>
-			
-			<h3>FOR EUROPEAN MEDIA ONLY</h3>
-
-			<h4>Please register below to participate in the online media briefing.</h4> -->
-
-
-			<div class="row">
-				<div class="span6" align="left" style="padding-left: 0px;">
-					<img src='http://www.streamingwell.tv/bayermedicalwebex/assets/img/Bayer_logo.png' height="100px" width="100px" />
-       		<h2 style="color:#0090C5; margin-bottom: 10px;">Bayer Medical Webex Portal</h2>
-       		
-       		<br/>
-
-          <p style="color:#390; font-size: 18px;"><strong>Training module:</strong></p>
-					<p style="font-size: 24px; line-height: 24px;"><i>Cancer- and treatment-related fatigue</i></p>
-
-					<br />
-
-	        <p style="font-size: 18px;">Dr Matti Aapro<br/>
-	        Dean of the  Multidisciplinary Oncology Institute<br/>
-	        Clinique de Genolier<br/>
-	        Switzerland<br/>
-	        </p>
-        </div>
-        <br/>
-
-        
-        	<div class="span5" align="left" style="margin-top: 100px; padding-left: 0px;">
-        	<p style="font-size: 16px;">Training will commence at <span style="color:#390;">08:00 (CET)</span> and then again at <span style="color:#390;">16:30 (CET) on Monday 22nd September</span> 
-          <br />
-          <br />
-        	Please arrive 5 minutes early to log-on.</p>  
-
-        	<a class="btn btn-primary" href="http://vimeo.com/62775852/download?t=1411467832&v=166779061&s=f3e72bcc2684fd15b5eedc87a107e6a7">Download</a>
-        </div>
-      </div>
-
-        <!-- <div class="span4 offset1" align="left" style="margin-top: 40px; margin-left: 50px;">
-        	<div id="flash_notice" style="display:none"></div>
-						<%= simple_form_for :registration, :url => registration_path do |form| %>
-						<%= form.error_notification %>
-					  <%= form.input :fname, label: "First name" %>
-				  	<%= form.input :lname, label: "Last name" %>
-				  	<%= form.input :email, label: "Email address" %>
-						  	
-						  <fieldset class="actions">
-						    <%= form.submit "Login", class: 'btn btn-primary btn-large' %>
-						  </fieldset>
-						</div>
-					<% end %>
-				</div> -->
-			</div>
-
-<br>
-
- <p align="center">If you experience difficulties logging in or playing the video, please visit the <%= link_to "Help Centre", help_path %>.</p>
-
-</div>
-
-<!-- <div class="row">
-        <div class="span10" align="center">
-        <small style="color:#390"><strong>Training will commence at 08:00 (CET) and then again at 17:00 (CET) on Monday 22nd September 
-          <br />
-        Please arrive 5 minutes early to log-on.</strong></small>   
-        </div>   
-      </div>  -->
-
-<%= yield %>
-
-</body>
+<br />
+<p align="center">If you experience difficulties playing the video, please visit the <%= link_to "Help Centre", help_path %>.</p>

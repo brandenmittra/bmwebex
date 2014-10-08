@@ -7,10 +7,10 @@ Aurmicrosite::Application.routes.draw do
 
   devise_for :users
 
-  root :to => 'pages#home'
+  root :to => 'pages#login'
   
   #get 'holding' => 'pages#holding'
-  #get 'login' => 'pages#login'
+  get 'login' => 'pages#login'
   get 'welcome' => 'pages#live'
   #get 'dialin' => 'pages#dialin'
   get 'help' => 'pages#help'

@@ -9,7 +9,7 @@ def new
     
     if @registration.valid?
       RegistrationsMailer.new_registration(@registration).deliver
-      redirect_to(dialin_path, :notice => "You've logged in successfully. Please follow the instructions below.")
+      redirect_to(archive_path, :notice => "You've logged in successfully.")
 
     else
       redirect_to(root_path, :notice => "Please fill all fields.")
