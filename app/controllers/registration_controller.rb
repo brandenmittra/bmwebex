@@ -12,7 +12,7 @@ def new
       redirect_to(archive_path, :notice => "You've logged in successfully.")
 
     else
-      redirect_to(root_path, :notice => "Please fill all fields.")
+      redirect_to(root_path, :notice => "Please make sure you've signed in with your work email address and filled all fields.")
     end
   end
 
